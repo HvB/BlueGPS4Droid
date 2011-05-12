@@ -129,7 +129,7 @@ public class BlueetoothGpsManager {
 			try {
 				BufferedReader reader = new BufferedReader(new InputStreamReader(in,"US-ASCII"));
 				String s;
-				while((enabled) && (now < lastRead+10000 )){
+				while((enabled) && (now < lastRead+5000 )){
 					if (reader.ready()){
 						s = reader.readLine();
 						Log.v(LOG_TAG, "data: "+System.currentTimeMillis()+" "+s);
@@ -401,7 +401,7 @@ public class BlueetoothGpsManager {
 						connectionAndReadingPool = Executors.newSingleThreadScheduledExecutor();
 			        	Log.v(LOG_TAG, "starting connection to socket task");
 			    		this.retriesTimeout = SystemClock.uptimeMillis()+maxConnectionRetries*60000 ;
-						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 3000, 10000, TimeUnit.MILLISECONDS);
+						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 3000, 5000, TimeUnit.MILLISECONDS);
 //						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 5000, 60000, TimeUnit.MILLISECONDS);
 					}
 				}
