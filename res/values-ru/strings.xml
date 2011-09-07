@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Copyright (C) 2010, 2011 Herbert von Broeuschmeul
+	Copyright (C) 2010, 2011 BluetoothGPS4Droid Project
+	  
+	This file is part of BluetoothGPS4Droid.
+	
+	BluetoothGPS4Droid is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	BluetoothGPS4Droid is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with BluetoothGPS4Droid. If not, see : http://www.gnu.org/licenses/.
+-->
+<resources>
+  <string name="app_name">BlueGps</string>
+  <string name="pref_start_gps_title">Пуск/Стоп GPS</string>
+  <string name="pref_start_gps_summary_off">Bluetooth GPS выключен</string>
+  <string name="pref_start_gps_summary_on">Bluetooth GPS включен</string>
+  <string name="pref_start_gps_params_title">Настройки GPS(SiRF)</string>
+  <string name="pref_gps_location_provider_title">Настройки источника данных о местоположении</string>
+  <string name="pref_gps_location_provider_summary">Bluetooth GPS заменит встроенный GPS</string>
+  <string name="pref_replace_std_gps_title">Заменить встроенный GPS</string>
+  <string name="pref_replace_std_gps_summary_on">Bluetooth GPS заменит встроенный GPS</string>
+  <string name="pref_replace_std_gps_summary_off">Bluetooth GPS будет использовать новый источник данных о местоположении</string>
+  <string name="pref_force_enable_provider_title">Автоматическое включение источника данных о местоположении</string>
+  <string name="pref_force_enable_provider_summary_on">Автоматическое включение источника данных о местоположении, даже если он был выключен</string>
+  <string name="pref_force_enable_provider_summary_off">Автоматическое включение источника данных о местоположении, только если он не существовал ранее</string>
+  <string name="pref_mock_gps_name_title">Имя "Mock" источника данных о местоположении</string>
+  <string name="pref_mock_gps_name_summary">Имя Bluetooth GPS: %s</string>
+  <string name="pref_connection_retries_title">Количество попыток соединения</string>
+  <string name="pref_connection_retries_summary">Количество попыток до выхода: %s</string>
+  <string name="pref_recording_title">Включить/Выключить журнал NMEA</string>
+  <string name="pref_recording_summary_off">Запись треков выключена</string>
+  <string name="pref_recording_summary_on">Запись треков включена</string>
+  <string name="pref_recording_params_title">Параметры записи</string>
+  <string name="pref_trackfile_prefix_title">Префикс файлов треков</string>
+  <string name="pref_trackfile_prefix_summary">Выберите префикс для файлов треков</string>
+  <string name="pref_trackfile_directory_title">Папка файлов треков</string>
+  <string name="pref_trackfile_directory_summary">Выберите папку для файлов треков</string>
+  <string name="pref_bluetooth_device_title">Выбор Bluetooth GPS</string>
+  <string name="pref_bluetooth_device_summary">"Текущее устройство: %s"</string>
+  <string name="pref_about_title">О программе</string>
+  <string name="pref_about_summary"></string>
+  <string name="pref_sirf_gps_title">SiRF GPS</string>
+  <string name="pref_sirf_gps_summary_off">"Использовать опции SiRF"</string>
+  <string name="pref_sirf_gps_summary_on">"Не использовать опции SiRF"</string>
+  <string name="pref_sirf_nmea_category_title">Выбор строк NMEA</string>
+  <string name="pref_sirf_gps_category_title">Работа GPS</string>
+  <string name="pref_enable_gga_title">Включение NMEA GGA</string>
+  <string name="pref_enable_gga_summary_off">Строки NMEA GGA выключены</string>
+  <string name="pref_enable_gga_summary_on">Строки NMEA GGA включены</string>
+  <string name="pref_enable_rmc_title">Включение NMEA RMC</string>
+  <string name="pref_enable_rmc_summary_off">Строки NMEA RMC выключены</string>
+  <string name="pref_enable_rmc_summary_on">Строки NMEA RMC включены</string>
+  <string name="pref_enable_gll_title">Включение NMEA GLL</string>
+  <string name="pref_enable_gll_summary_off">Строки NMEA GLL выключены</string>
+  <string name="pref_enable_gll_summary_on">Строки NMEA GLL включены</string>
+  <string name="pref_enable_vtg_title">Включение NMEA VTG</string>
+  <string name="pref_enable_vtg_summary_off">Строки NMEA VTG выключены</string>
+  <string name="pref_enable_vtg_summary_on">Строки NMEA VTG включены</string>
+  <string name="pref_enable_gsa_title">Включение NMEA GSA</string>
+  <string name="pref_enable_gsa_summary_off">Строки NMEA GSA выключены</string>
+  <string name="pref_enable_gsa_summary_on">Строки NMEA GSA выключены</string>
+  <string name="pref_enable_gsv_title">Включение NMEA GSV</string>
+  <string name="pref_enable_gsv_summary_off">Строки NMEA GSV выключены</string>
+  <string name="pref_enable_gsv_summary_on">Строки NMEA GSV включены</string>
+  <string name="pref_enable_zda_title">Включение NMEA ZDA</string>
+  <string name="pref_enable_zda_summary_off">Строки NMEA ZDA выключены</string>
+  <string name="pref_enable_zda_summary_on">Строки NMEA ZDA выключены</string>
+  <string name="pref_enable_sbas_title">SBAS (WAAS/EGNOS)</string>
+  <string name="pref_enable_sbas_summary_off">SBAS выключен</string>
+  <string name="pref_enable_sbas_summary_on">SBAS включен</string>
+  <string name="pref_enable_nmea_title">Режим: NMEA/бинарный</string>
+  <string name="pref_enable_nmea_summary_off">Включен бинарный режим</string>
+  <string name="pref_enable_nmea_summary_on">Включен режим NMEA</string>
+  <string name="pref_enable_static_navigation_title">Статическая навигация</string>
+  <string name="pref_enable_static_navigation_summary_off">Статическая навигация запрещена</string>
+  <string name="pref_enable_static_navigation_summary_on">Static Navigation разрешена</string>
+  <string name="msg_gps_provider_started">Bluetooth GPS... запущен</string>
+  <string name="msg_gps_provider_stopped">Bluetooth GPS... остановлен</string>
+  <string name="msg_gps_provider_already_started">Bluetooth GPS... уже запущен</string>
+  <string name="msg_gps_provider_stopped_by_problem">"Невозможно запустить: %s"</string>
+  <string name="msg_two_many_connection_problems">Сликом много ошибок соединения</string>
+  <string name="msg_gps_provider_disabled">GPS выключен</string>
+  <string name="msg_bluetooth_unsupported">Bluetooth не поддерживается</string>
+  <string name="msg_bluetooth_disabled">Bluetooth выключен</string>
+  <string name="msg_mock_location_disabled">Отключен Mock locations </string>
+  <string name="msg_bluetooth_gps_unavaible">Невозможно подключиться к bluetooth GPS</string>
+  <string name="msg_nmea_recording_started">Запись GPS NMEA ... запущена</string>
+  <string name="msg_nmea_recording_stopped">Запись GPS NMEA ... остановлена</string>
+  <string name="msg_nmea_recording_already_started">Запись треков GPS ... уже запущена</string>
+  <string name="foreground_service_started_notification_title">BlueGps</string>
+  <string name="foreground_gps_provider_started_notification">Служба BlueGps запущена</string>
+  <string name="foreground_nmea_recording_started_notification">Служба записи BlueGps NMEA запущена</string>
+  <string name="connection_problem_notification_title">BlueGps: проблема соединения</string>
+  <plurals name="connection_problem_notification">
+    <item quantity="one">Еще одна попытка до закрытия</item>
+    <item quantity="other">Будет предпринято еще %d попыток до закрытия</item>
+  </plurals>
+  <string name="service_closed_because_connection_problem_notification_title">BlueGps остановлен</string>
+  <string name="service_closed_because_connection_problem_notification">"Причина: %s"</string>
+  <string name="about_title">О программе</string>
+  <string name="about_version">BluetoothGPS4Droid версии</string>
+  <string name="about_copyright_1">Copyright (C) 2010 Herbert von Broeuschmeul</string>
+  <string name="about_copyright_2">Copyright (C) 2010 BluetoothGPS4Droid Project</string>
+  <string name="about_app_desc">Bluetooth GPS for Android  - приложение для использования
+    	внешнего bluetooth GPS приемника.
+</string>
+  <string name="about_license">Это программное обеспечение с открытым исходным кодом,
+распространяемое бесплатно на условиях <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html"><b>GNU General Public License</b></a>.
+    </string>
+  <string name="about_sources">Исходный код доступен из репозитория Git на странице проекта: 
+		http://sourceforge.net/p/bluegps4droid
+    </string>
+</resources>
