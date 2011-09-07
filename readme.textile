@@ -1,4 +1,7 @@
-*BlueGps4Droid 1.2.2* (2011-05-14)
+*BlueGps4Droid 1.2.3* (2011-09-08)
+* Add Russian translation (thanks to skleroz)
+
+BlueGps4Droid 1.2.2 (2011-05-14)
 * Add an option to force auto-activation of the chosen location provider (useful when the device defines a GPS provider but doesn't provide the preferences used to enable/disable it).
 * Update copyright infos.
 * Decrease the alleged power consumption of the bluetooth GPS (so now bluetooth GPS should consume less power than internal GPS).
