@@ -89,9 +89,9 @@
     <string name="pref_enable_static_navigation_summary_off">Navegación estática desactivado</string>
     <string name="pref_enable_static_navigation_summary_on">Navegación estática activado</string>
 
-    <string name="msg_gps_provider_started">GPS Bluetooth... arrancado</string>
-    <string name="msg_gps_provider_stopped">GPS Bluetooth... parado</string>
-    <string name="msg_gps_provider_already_started">GPS Bluetooth... ya está arrancado</string>
+    <string name="msg_gps_provider_started">GPS Bluetooth… arrancado</string>
+    <string name="msg_gps_provider_stopped">GPS Bluetooth… parado</string>
+    <string name="msg_gps_provider_already_started">GPS Bluetooth… ya está arrancado</string>
     <string name="msg_gps_provider_stopped_by_problem">"¡Vaya, no puedo arrancar! %s"</string>
     <string name="msg_two_many_connection_problems">Problemas de conexión</string>
     <string name="msg_gps_provider_disabled">El GPS está desactivado</string>
@@ -99,9 +99,9 @@
     <string name="msg_bluetooth_disabled">Bluetooth desactivado</string>
     <string name="msg_mock_location_disabled">Ubicaciones ficticias (Mock) no activadas</string>
     <string name="msg_bluetooth_gps_unavaible">Imposible conectarse al GPS</string>
-    <string name="msg_nmea_recording_started">Registro de trazas NMEA... iniciado</string>
-    <string name="msg_nmea_recording_stopped">Registro de trazas NMEA... parado</string>
-    <string name="msg_nmea_recording_already_started">El registro de trazas GPS... ya está iniciado</string>
+    <string name="msg_nmea_recording_started">Registro de trazas NMEA… iniciado</string>
+    <string name="msg_nmea_recording_stopped">Registro de trazas NMEA… parado</string>
+    <string name="msg_nmea_recording_already_started">El registro de trazas GPS… ya está iniciado</string>
     <string name="foreground_service_started_notification_title">BlueGps</string>
     <string name="foreground_gps_provider_started_notification">GPS Bluetooth arrancado.</string>   
     <string name="foreground_nmea_recording_started_notification">Registro de trazas NMEA en curso.</string>

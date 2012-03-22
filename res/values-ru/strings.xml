@@ -83,9 +83,9 @@
   <string name="pref_enable_static_navigation_title">Статическая навигация</string>
   <string name="pref_enable_static_navigation_summary_off">Статическая навигация запрещена</string>
   <string name="pref_enable_static_navigation_summary_on">Static Navigation разрешена</string>
-  <string name="msg_gps_provider_started">Bluetooth GPS... запущен</string>
-  <string name="msg_gps_provider_stopped">Bluetooth GPS... остановлен</string>
-  <string name="msg_gps_provider_already_started">Bluetooth GPS... уже запущен</string>
+  <string name="msg_gps_provider_started">Bluetooth GPS… запущен</string>
+  <string name="msg_gps_provider_stopped">Bluetooth GPS… остановлен</string>
+  <string name="msg_gps_provider_already_started">Bluetooth GPS… уже запущен</string>
   <string name="msg_gps_provider_stopped_by_problem">"Невозможно запустить: %s"</string>
   <string name="msg_two_many_connection_problems">Сликом много ошибок соединения</string>
   <string name="msg_gps_provider_disabled">GPS выключен</string>
@@ -93,9 +93,9 @@
   <string name="msg_bluetooth_disabled">Bluetooth выключен</string>
   <string name="msg_mock_location_disabled">Отключен Mock locations </string>
   <string name="msg_bluetooth_gps_unavaible">Невозможно подключиться к bluetooth GPS</string>
-  <string name="msg_nmea_recording_started">Запись GPS NMEA ... запущена</string>
-  <string name="msg_nmea_recording_stopped">Запись GPS NMEA ... остановлена</string>
-  <string name="msg_nmea_recording_already_started">Запись треков GPS ... уже запущена</string>
+  <string name="msg_nmea_recording_started">Запись GPS NMEA … запущена</string>
+  <string name="msg_nmea_recording_stopped">Запись GPS NMEA … остановлена</string>
+  <string name="msg_nmea_recording_already_started">Запись треков GPS … уже запущена</string>
   <string name="foreground_service_started_notification_title">BlueGps</string>
   <string name="foreground_gps_provider_started_notification">Служба BlueGps запущена</string>
   <string name="foreground_nmea_recording_started_notification">Служба записи BlueGps NMEA запущена</string>

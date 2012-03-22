@@ -86,9 +86,9 @@
     <string name="pref_enable_static_navigation_summary_off">Static Navigation disabled</string>
     <string name="pref_enable_static_navigation_summary_on">Static Navigation enabled</string>
 
-    <string name="msg_gps_provider_started">Bluetooth GPS... started</string>
-    <string name="msg_gps_provider_stopped">Bluetooth GPS... stopped</string>
-    <string name="msg_gps_provider_already_started">Bluetooth GPS... is already on</string>
+    <string name="msg_gps_provider_started">Bluetooth GPS… started</string>
+    <string name="msg_gps_provider_stopped">Bluetooth GPS… stopped</string>
+    <string name="msg_gps_provider_already_started">Bluetooth GPS… is already on</string>
     <string name="msg_gps_provider_stopped_by_problem">"Cannot start: %s"</string>
     <string name="msg_two_many_connection_problems">Too many connection problems</string>
     <string name="msg_gps_provider_disabled">GPS is disabled</string>
@@ -96,9 +96,9 @@
     <string name="msg_bluetooth_disabled">Bluetooth is disabled</string>
     <string name="msg_mock_location_disabled">Mock locations disabled</string>
     <string name="msg_bluetooth_gps_unavaible">Cannot connect to bluetooth GPS</string>
-    <string name="msg_nmea_recording_started">GPS NMEA recording... started</string>
-    <string name="msg_nmea_recording_stopped">GPS NMEA recording... stopped</string>
-    <string name="msg_nmea_recording_already_started">GPS track recording... is already on</string>
+    <string name="msg_nmea_recording_started">GPS NMEA recording… started</string>
+    <string name="msg_nmea_recording_stopped">GPS NMEA recording… stopped</string>
+    <string name="msg_nmea_recording_already_started">GPS track recording… is already on</string>
     <string name="foreground_service_started_notification_title">BlueGps</string>
     <string name="foreground_gps_provider_started_notification">BlueGps service started</string>
     <string name="foreground_nmea_recording_started_notification">BlueGps NMEA recording service started</string>

@@ -86,9 +86,9 @@
     <string name="pref_enable_static_navigation_summary_off">Navigation Statique désactivée</string>
     <string name="pref_enable_static_navigation_summary_on">Navigation Statique activée</string>
 
-    <string name="msg_gps_provider_started">GPS Bluetooth... démarré</string>
-    <string name="msg_gps_provider_stopped">GPS Bluetooth... arrêté</string>
-    <string name="msg_gps_provider_already_started">GPS Bluetooth... déjà démarré</string>
+    <string name="msg_gps_provider_started">GPS Bluetooth… démarré</string>
+    <string name="msg_gps_provider_stopped">GPS Bluetooth… arrêté</string>
+    <string name="msg_gps_provider_already_started">GPS Bluetooth… déjà démarré</string>
     <string name="msg_gps_provider_stopped_by_problem">"Oups ! %s"</string>
     <string name="msg_two_many_connection_problems">Problèmes de connexion</string>
     <string name="msg_gps_provider_disabled">Le GPS est désactivé</string>
@@ -96,9 +96,9 @@
     <string name="msg_bluetooth_disabled">Bluetooth désactivé</string>
     <string name="msg_mock_location_disabled">Positions fictives non autorisées</string>
     <string name="msg_bluetooth_gps_unavaible">Impossible de se connecter au GPS</string>
-    <string name="msg_nmea_recording_started">Enregistrement des traces NMEA... démarré</string>
-    <string name="msg_nmea_recording_stopped">Enregistrement des traces NMEA... arrêté</string>
-    <string name="msg_nmea_recording_already_started">Enregistrement des traces GPS... déjà démarré</string>
+    <string name="msg_nmea_recording_started">Enregistrement des traces NMEA… démarré</string>
+    <string name="msg_nmea_recording_stopped">Enregistrement des traces NMEA… arrêté</string>
+    <string name="msg_nmea_recording_already_started">Enregistrement des traces GPS… déjà démarré</string>
     <string name="foreground_service_started_notification_title">BlueGps</string>
     <string name="foreground_gps_provider_started_notification">GPS Bluetooth démarré.</string>   
     <string name="foreground_nmea_recording_started_notification">Enregistrement des données NMEA en cours.</string>
