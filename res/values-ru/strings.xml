@@ -108,8 +108,8 @@
   <string name="service_closed_because_connection_problem_notification">"Причина: %s"</string>
   <string name="about_title">О программе</string>
   <string name="about_version">BluetoothGPS4Droid версии</string>
-  <string name="about_copyright_1">Copyright (C) 2010 Herbert von Broeuschmeul</string>
-  <string name="about_copyright_2">Copyright (C) 2010 BluetoothGPS4Droid Project</string>
+  <string name="about_copyright_1">Copyright (C) 2010, 2011, 2012 Herbert von Broeuschmeul</string>
+  <string name="about_copyright_2">Copyright (C) 2010, 2011, 2012 BluetoothGPS4Droid Project</string>
   <string name="about_app_desc">Bluetooth GPS for Android  - приложение для использования
     	внешнего bluetooth GPS приемника.
 </string>
