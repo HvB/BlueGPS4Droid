@@ -24,8 +24,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import android.app.AlertDialog;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
+import backport.android.bluetooth.BluetoothAdapter;
+import backport.android.bluetooth.BluetoothDevice;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
@@ -156,6 +156,11 @@ public class BluetoothGpsActivity extends PreferenceActivity implements OnPrefer
         int defaultColor = textView.getTextColors().getDefaultColor();
         textView.setTextColor(defaultColor);
         textView = (TextView) messageView.findViewById(R.id.about_sources);
+        textView.setTextColor(defaultColor);
+        textView = (TextView) messageView.findViewById(R.id.about_bluetooth_license);
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        textView.setTextColor(defaultColor);
+        textView = (TextView) messageView.findViewById(R.id.about_bluetooth_sources);
         textView.setTextColor(defaultColor);
        
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
