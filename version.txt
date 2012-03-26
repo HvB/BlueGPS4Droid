@@ -1,3 +1,11 @@
+BlueGps4Cupcake 1.2.3 (2012-03-27)
+	* BlueGps4Droid version 1.2.4 for Cupcake and Donuts - Do not use with Eclair, Froyo or Gingerbread !!!
+	* Bluetooth support is provided using the backport-android-bluetooth package: http://code.google.com/p/backport-android-bluetooth.
+
+BlueGps4Droid 1.2.4 (2012-03-26)
+	* Bug fix: bug #9 Handle NMEA timestamps without fractional seconds(thanks to Jeffrey Hutzelman)
+	* Update copyright info in source and about app message
+
 BlueGps4Cupcake 1.2.3 (2011-09-08)
 	* BlueGps4Droid version 1.2.3 for Cupcake and Donuts - Do not use with Eclair, Froyo or Gingerbread !!!
 	* Bluetooth support is provided using the backport-android-bluetooth package: http://code.google.com/p/backport-android-bluetooth.

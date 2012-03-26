@@ -1,17 +1,29 @@
-*"BlueGps4Cupcake 1.2.3":http://sourceforge.net/projects/bluegps4droid/files/Apk/BlueGPS4Droid_1.2.x/BlueGps4Cupcake_1.2.3.apk/download* (2011-09-08)
+*"BlueGps4Cupcake 1.2.4":http://sourceforge.net/projects/bluegps4droid/files/Apk/BlueGPS4Droid_1.2.x/BlueGps4Cupcake_1.2.4.apk/download* (2012-03-27)
+* BlueGps4Droid version 1.2.4 for Cupcake and Donuts - *Do not use with Eclair, Froyo or Gingerbread !!!*
+* Bluetooth support is provided using the backport-android-bluetooth package:  "http://code.google.com/p/backport-android-bluetooth":http://code.google.com/p/backport-android-bluetooth.
+
+*BlueGps4Droid 1.2.4* (2012-03-23)
+* Bug fix (Ticket #9: "Handle NMEA timestamps without fractional seconds":https://sourceforge.net/p/bluegps4droid/tickets/9/ ) (thanks to Jeffrey Hutzelman)
+* Update copyright info in source and about app message
+
+BlueGps4Cupcake 1.2.3 (2011-09-08)
 * BlueGps4Droid version 1.2.3 for Cupcake and Donuts - *Do not use with Eclair, Froyo or Gingerbread !!!*
 * Bluetooth support is provided using the backport-android-bluetooth package:  "http://code.google.com/p/backport-android-bluetooth":http://code.google.com/p/backport-android-bluetooth.
 
-*BlueGps4Droid 1.2.3* (2011-09-08)
+BlueGps4Droid 1.2.3 (2011-09-08)
 * Add Russian translation (thanks to skleroz)
+
+BlueGps4Cupcake 1.2.2 (2011-05-24)
+* BlueGps4Droid version 1.2.2 for Cupcake and Donuts - *Do not use with Eclair, Froyo or Gingerbread !!!*
+* Bluetooth support is provided using the backport-android-bluetooth package: http://code.google.com/p/backport-android-bluetooth.
 
 BlueGps4Droid 1.2.2 (2011-05-14)
 * Add an option to force auto-activation of the chosen location provider (useful when the device defines a GPS provider but doesn't provide the preferences used to enable/disable it).
 * Update copyright infos.
 * Decrease the alleged power consumption of the bluetooth GPS (so now bluetooth GPS should consume less power than internal GPS).
 * Change default retries number before auto-closing BlueGPS4Droid. 
-* Bug fix (Ticket #5: "BlueGPS loops forever when SIRF is enabled but connection cannot be established":https://sourceforge.net/p/bluegps4droid/tickets/5/). 
-* Bug fixed (Ticket #6: "Cannot add mock provider if it exists already":https://sourceforge.net/p/bluegps4droid/tickets/6/). 
+* Bug fix (Ticket #5: "BlueGPS loops forever when SIRF is enabled but connection cannot be established":https://sourceforge.net/p/bluegps4droid/tickets/5/ ). 
+* Bug fixed (Ticket #6: "Cannot add mock provider if it exists already":https://sourceforge.net/p/bluegps4droid/tickets/6/ ). 
 * Closing of bluetooth connection improvements. 
 
 BlueGps4Droid 1.2.1 (2011-01-20)
