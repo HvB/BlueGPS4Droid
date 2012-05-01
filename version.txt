@@ -1,3 +1,6 @@
+BlueGps4Droid 1.2.5 (2012-05-01)
+	* Add Portuguese translation (thanks to rsantospereira (XDA: rikpereira) and meiji (XDA: meiji.emperor))
+
 BlueGps4Droid 1.2.4 (2012-03-26)
 	* Bug fix: bug #9 Handle NMEA timestamps without fractional seconds(thanks to Jeffrey Hutzelman)
 	* Update copyright info in source and about app message
