@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Copyright (C) 2010, 2011, 2012 Herbert von Broeuschmeul
+	Copyright (C) 2010, 2011, 2012 BluetoothGPS4Droid Project
+	  
+	This file is part of BluetoothGPS4Droid.
+
+	BluetoothGPS4Droid is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	BluetoothGPS4Droid is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with BluetoothGPS4Droid. If not, see : http://www.gnu.org/licenses/.
+-->
+<!--  
+	Authors: rsantospereira (XDA: rikpereira) and meiji (XDA: meiji.emperor)
+-->
+<resources>
+     <string name="app_name">BlueGps</string>
+     
+    <string name="pref_start_gps_title">Iniciar/Parar GPS</string>
+    <string name="pref_start_gps_summary_off">Bluetooth GPS está desativado</string>
+    <string name="pref_start_gps_summary_on">Bluetooth GPS está ativo</string>
+    <string name="pref_start_gps_params_title">Opções GPS (SiRF)</string>
+    <string name="pref_gps_location_provider_title">Opções Fornecedor Localização</string>
+    <string name="pref_gps_location_provider_summary">Bluetooth GPS irá substituir GPS interno</string>
+    <string name="pref_replace_std_gps_title">GPS interno substituído</string>
+    <string name="pref_replace_std_gps_summary_on">Bluetooth GPS irá substituir GPS interno</string>
+    <string name="pref_replace_std_gps_summary_off">Bluetooth GPS irá usar novo fornecedor de localização</string>
+    <string name="pref_force_enable_provider_title">Activar automaticamente localização</string>
+    <string name="pref_force_enable_provider_summary_on">Activar automaticamente localização, mesmo estando desativado</string>
+    <string name="pref_force_enable_provider_summary_off">Activar automaticamente localização, apenas se não existir</string>
+    <string name="pref_mock_gps_name_title">Nome personalizado para fornecedor de localização</string>
+    <string name="pref_mock_gps_name_summary">Nome para Bluetooth GPS: %s</string>
+    <string name="pref_connection_retries_title">Número de Tentativas de Conexão</string>
+    <string name="pref_connection_retries_summary">Número de tentativas antes de parar: %s</string>
+    <string name="pref_recording_title">Activar/Desactivar NMEA log</string>
+    <string name="pref_recording_summary_off">Rastreamento destivado</string>
+    <string name="pref_recording_summary_on">Rastreamento  ativo</string>
+    <string name="pref_recording_params_title">Parâmetros de Rastreamento</string>
+    <string name="pref_trackfile_prefix_title">Prefixo de ficheiro de rastreamento</string>
+    <string name="pref_trackfile_prefix_summary">Selecione um prefixo de rastreamento</string>
+    <string name="pref_trackfile_directory_title">Diretoria de Rastreamento</string>
+    <string name="pref_trackfile_directory_summary">Selecione uma diretoria de rastreamento</string>
+    <string name="pref_bluetooth_device_title">Selecione Bluetooth GPS</string>
+    <string name="pref_bluetooth_device_summary">"Dispositivo ativo: %s"</string>    
+    <string name="pref_about_title">Sobre</string>
+    <string name="pref_about_summary"></string>    
+
+    <string name="pref_sirf_gps_title">SiRF GPS</string>
+    <string name="pref_sirf_gps_summary_off">"Utilizar Opções SiRF"</string>
+    <string name="pref_sirf_gps_summary_on">"Outras Opções SiRF"</string>
+    <string name="pref_sirf_nmea_category_title">Sequência de items NMEA</string>
+    <string name="pref_sirf_gps_category_title">Funcionamento GPS</string>
+    <string name="pref_enable_gga_title">Activar NMEA GGA</string>
+    <string name="pref_enable_gga_summary_off">NMEA GGA sentences estão destivados</string>
+    <string name="pref_enable_gga_summary_on">NMEA GGA sentences estão ativos</string>
+    <string name="pref_enable_rmc_title">Activar NMEA RMC</string>
+    <string name="pref_enable_rmc_summary_off">NMEA RMC sentences estão destivados</string>
+    <string name="pref_enable_rmc_summary_on">NMEA RMC sentences estão activos</string>
+    <string name="pref_enable_gll_title">Activar NMEA GLL</string>
+    <string name="pref_enable_gll_summary_off">NMEA GLL sentences estão destivados</string>
+    <string name="pref_enable_gll_summary_on">NMEA GLL sentences estão ativos</string>
+    <string name="pref_enable_vtg_title">Activar NMEA VTG</string>
+    <string name="pref_enable_vtg_summary_off">NMEA VTG sentences estão destivados</string>
+    <string name="pref_enable_vtg_summary_on">NMEA VTG sentences estão ativos</string>
+    <string name="pref_enable_gsa_title">Activar NMEA GSA</string>
+    <string name="pref_enable_gsa_summary_off">NMEA GSA sentences estão destivados</string>
+    <string name="pref_enable_gsa_summary_on">NMEA GSA sentences estão ativos</string>
+    <string name="pref_enable_gsv_title">Activar NMEA GSV</string>
+    <string name="pref_enable_gsv_summary_off">NMEA GSV sentences estão destivados</string>
+    <string name="pref_enable_gsv_summary_on">NMEA GSV sentences estão ativos</string>
+    <string name="pref_enable_zda_title">Activar NMEA ZDA</string>
+    <string name="pref_enable_zda_summary_off">NMEA ZDA sentences estão destivados</string>
+    <string name="pref_enable_zda_summary_on">NMEA ZDA sentences estão ativos</string>
+    <string name="pref_enable_sbas_title">SBAS (WAAS/EGNOS)</string>
+    <string name="pref_enable_sbas_summary_off">SBAS está desativado</string>
+    <string name="pref_enable_sbas_summary_on">SBAS está ativo</string>
+    <string name="pref_enable_nmea_title">Modo NMEA/Binary</string>
+    <string name="pref_enable_nmea_summary_off">Binary mode está ativo</string>
+    <string name="pref_enable_nmea_summary_on">NMEA mode está ativo</string>
+    <string name="pref_enable_static_navigation_title">Navegação estática</string>
+    <string name="pref_enable_static_navigation_summary_off">Navegação estática desativado</string>
+    <string name="pref_enable_static_navigation_summary_on">Navegação estática ativo</string>
+
+    <string name="msg_gps_provider_started">Bluetooth GPS… iniciado</string>
+    <string name="msg_gps_provider_stopped">Bluetooth GPS… parado</string>
+    <string name="msg_gps_provider_already_started">Bluetooth GPS… está ativo</string>
+    <string name="msg_gps_provider_stopped_by_problem">"Não é possível iniciar: %s"</string>
+    <string name="msg_two_many_connection_problems">Problemas conexão</string>
+    <string name="msg_gps_provider_disabled">GPS está desativo</string>
+    <string name="msg_bluetooth_unsupported">Bluetooth não é suportado</string>
+    <string name="msg_bluetooth_disabled">Bluetooth está desativado</string>
+    <string name="msg_mock_location_disabled">Localizações fictícias desativadas</string>
+    <string name="msg_bluetooth_gps_unavaible">Não foi possível ligar ao bluetooth GPS</string>
+    <string name="msg_nmea_recording_started">GPS NMEA recording… iniciado</string>
+    <string name="msg_nmea_recording_stopped">GPS NMEA recording… parado</string>
+    <string name="msg_nmea_recording_already_started">GPS rastreamento… está ativo</string>
+    <string name="foreground_service_started_notification_title">BlueGps</string>
+    <string name="foreground_gps_provider_started_notification">Serviço BlueGps ativo</string>
+    <string name="foreground_nmea_recording_started_notification">BlueGps NMEA rastreamento ativo</string>
+    <string name="connection_problem_notification_title">BlueGps: problemas na conexão</string>
+    <plurals name="connection_problem_notification">
+    	<item quantity="one">Nova tentativa antes de fechar</item>
+    	<item quantity="other">%d tentativas antes de fechar</item>
+    </plurals>
+    <string name="service_closed_because_connection_problem_notification_title">BlueGps parado</string>
+    <string name="service_closed_because_connection_problem_notification">"Motivo: %s"</string>
+    
+    <string name="about_title">Sobre</string>
+    <string name="about_version">BluetoothGPS4Droid version</string>
+    <string name="about_copyright_1">Copyright (C) 2010, 2011, 2012 Herbert von Broeuschmeul</string>
+    <string name="about_copyright_2">Copyright (C) 2010, 2011, 2012 BluetoothGPS4Droid Project</string>
+    <string name="about_app_desc">Bluetooth GPS para Android é uma aplicação 
+    	para usar um bluetooth GPS em dispositivos Android.
+    </string>
+    <string name="about_license">É um software open source 
+    	distributed free of charge under the terms of the <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html"><b>GNU General Public License</b></a>.
+    </string>
+    <string name="about_sources">The source code is available from Git repository on the project website: 
+		http://sourceforge.net/p/bluegps4droid
+    </string>
+</resources>
