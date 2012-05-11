@@ -1,4 +1,11 @@
-BlueGps4Cupcake 1.2.3 (2012-03-27)
+BlueGps4Droid 1.2.5 (2012-05-11)
+	* BlueGps4Droid version 1.2.5 for Cupcake and Donuts - Do not use with Eclair, Froyo or Gingerbread !!!
+	* Bluetooth support is provided using the backport-android-bluetooth package: http://code.google.com/p/backport-android-bluetooth.
+
+BlueGps4Droid 1.2.5 (2012-05-01)
+	* Add Portuguese translation (thanks to rsantospereira (XDA: rikpereira) and meiji (XDA: meiji.emperor))
+
+BlueGps4Cupcake 1.2.4 (2012-03-27)
 	* BlueGps4Droid version 1.2.4 for Cupcake and Donuts - Do not use with Eclair, Froyo or Gingerbread !!!
 	* Bluetooth support is provided using the backport-android-bluetooth package: http://code.google.com/p/backport-android-bluetooth.
 
