@@ -124,11 +124,11 @@ public class BlueetoothGpsManager {
 		}
 		
 		public void run() {
+			long now = SystemClock.uptimeMillis();
+			long lastRead = now;
 			try {
 				BufferedReader reader = new BufferedReader(new InputStreamReader(in,"US-ASCII"));
 				String s;
-				long now = SystemClock.uptimeMillis();
-				long lastRead = now;
 				while((enabled) && (now < lastRead+5000 )){
 					if (reader.ready()){
 						s = reader.readLine();
@@ -148,6 +148,7 @@ public class BlueetoothGpsManager {
 			} finally {
 				// cleanly closing everything...
 				this.close();
+	    		retriesTimeout = lastRead + maxConnectionRetries*60000;
 				disableIfNeeded();
 			}
 		}
@@ -232,7 +233,8 @@ public class BlueetoothGpsManager {
 	private Context appContext;
 	private NotificationManager notificationManager;
 	private int maxConnectionRetries;
-	private int nbRetriesRemaining;
+//	private int nbRetriesRemaining;
+	private long retriesTimeout = 0L;
 	private boolean connected = false;
 
 	/**
@@ -244,7 +246,7 @@ public class BlueetoothGpsManager {
 		this.gpsDeviceAddress = deviceAddress;
 		this.callingService = callingService;
 		this.maxConnectionRetries = maxRetries;
-		this.nbRetriesRemaining = 1+maxRetries;
+//		this.nbRetriesRemaining = 1+maxRetries;
 		this.appContext = callingService.getApplicationContext();
 		locationManager = (LocationManager)callingService.getSystemService(Context.LOCATION_SERVICE);
 		sharedPreferences = PreferenceManager.getDefaultSharedPreferences(callingService);
@@ -327,7 +329,7 @@ public class BlueetoothGpsManager {
 					}
 					if (gpsSocket == null){
 	    				Log.e(LOG_TAG, "Error while establishing connection: no socket");
-			        	disable(R.string.msg_bluetooth_gps_unavaible);
+			        	disable(R.string.msg_bluetooth_gps_unavaible); 
 					} else {
 						Runnable connectThread = new Runnable() {							
 							@Override
@@ -335,7 +337,7 @@ public class BlueetoothGpsManager {
 								try {
 									connected = false;
 									Log.v(LOG_TAG, "current device: "+gpsDevice.getName() + " -- " + gpsDevice.getAddress());
-									if ((bluetoothAdapter.isEnabled()) && (nbRetriesRemaining > 0 )){										
+									if ((bluetoothAdapter.isEnabled()) /*&& (nbRetriesRemaining > 0 )*/){										
 										try {
 											if (connectedGps != null){
 												connectedGps.close();
@@ -369,22 +371,22 @@ public class BlueetoothGpsManager {
 											// reset eventual disabling cause
 //											setDisableReason(0);
 											// connection obtained so reset the number of connection try
-											nbRetriesRemaining = 1+maxConnectionRetries ;
+											// nbRetriesRemaining = 1+maxConnectionRetries ;
 											notificationManager.cancel(R.string.connection_problem_notification_title);
 						        			Log.v(LOG_TAG, "starting socket reading task");
 											connectedGps = new ConnectedGps(gpsSocket);
 											connectionAndReadingPool.execute(connectedGps);
 								        	Log.v(LOG_TAG, "socket reading thread started");
 										}
-//									} else if (! bluetoothAdapter.isEnabled()) {
-//										setDisableReason(R.string.msg_bluetooth_disabled);
+									} else if (! bluetoothAdapter.isEnabled()) {
+										setDisableReason(R.string.msg_bluetooth_disabled);
 									}
 								} catch (IOException connectException) {
 									// Unable to connect
 									Log.e(LOG_TAG, "error while connecting to socket", connectException);									
 									// disable(R.string.msg_bluetooth_gps_unavaible);
 								} finally {
-									nbRetriesRemaining--;
+									// nbRetriesRemaining--;
 									if (! connected) {
 										disableIfNeeded();
 									}
@@ -398,7 +400,9 @@ public class BlueetoothGpsManager {
 			        	Log.v(LOG_TAG, "starting connection and reading thread");
 						connectionAndReadingPool = Executors.newSingleThreadScheduledExecutor();
 			        	Log.v(LOG_TAG, "starting connection to socket task");
-						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 5000, 60000, TimeUnit.MILLISECONDS);
+			    		this.retriesTimeout = SystemClock.uptimeMillis()+maxConnectionRetries*60000 ;
+						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 3000, 5000, TimeUnit.MILLISECONDS);
+//						connectionAndReadingPool.scheduleWithFixedDelay(connectThread, 5000, 60000, TimeUnit.MILLISECONDS);
 					}
 				}
 			}
@@ -414,17 +418,21 @@ public class BlueetoothGpsManager {
 	 */
 	private synchronized void disableIfNeeded(){
 		if (enabled){
-			if (nbRetriesRemaining > 0){
+			long currentTime = Math.min(SystemClock.uptimeMillis(),retriesTimeout);
+			if (retriesTimeout > currentTime){
+//			if (nbRetriesRemaining > 0){
 				// Unable to connect
-				Log.e(LOG_TAG, "Unable to establish connection");
+				int nbRetriesRemaining = 1 + (int)((retriesTimeout - currentTime)/60000) ;
 				connectionProblemNotification.when = System.currentTimeMillis();
 				String pbMessage = appContext.getResources().getQuantityString(R.plurals.connection_problem_notification, nbRetriesRemaining, nbRetriesRemaining);
 				connectionProblemNotification.setLatestEventInfo(appContext, 
 						appContext.getString(R.string.connection_problem_notification_title), 
 						pbMessage, 
 						connectionProblemNotification.contentIntent);
+//				connectionProblemNotification.number = maxConnectionRetries - (int)((retriesTimeout - currentTime)/60000);
 				connectionProblemNotification.number = 1 + maxConnectionRetries - nbRetriesRemaining;
 				notificationManager.notify(R.string.connection_problem_notification_title, connectionProblemNotification);
+				Log.e(LOG_TAG, "Unable to establish connection since "+connectionProblemNotification.number + " still " + nbRetriesRemaining +" remaining");
 			} else {
 //				notificationManager.cancel(R.string.connection_problem_notification_title);
 //				serviceStoppedNotification.when = System.currentTimeMillis();
