@@ -54,8 +54,8 @@
     <string name="pref_about_summary"></string>    
 
     <string name="pref_sirf_gps_title">SiRF GPS</string>
-    <string name="pref_sirf_gps_summary_off">"Utilizar Opções SiRF"</string>
-    <string name="pref_sirf_gps_summary_on">"Outras Opções SiRF"</string>
+    <string name="pref_sirf_gps_summary_off">"Não utilizar Opções SiRF"</string>
+    <string name="pref_sirf_gps_summary_on">"Utilizar Opções SiRF"</string>
     <string name="pref_sirf_nmea_category_title">Sequência de items NMEA</string>
     <string name="pref_sirf_gps_category_title">Funcionamento GPS</string>
     <string name="pref_enable_gga_title">Activar NMEA GGA</string>

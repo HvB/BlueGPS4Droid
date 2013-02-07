@@ -49,8 +49,8 @@
   <string name="pref_about_title">О программе</string>
   <string name="pref_about_summary"></string>
   <string name="pref_sirf_gps_title">SiRF GPS</string>
-  <string name="pref_sirf_gps_summary_off">"Использовать опции SiRF"</string>
-  <string name="pref_sirf_gps_summary_on">"Не использовать опции SiRF"</string>
+  <string name="pref_sirf_gps_summary_off">"Не использовать опции SiRF"</string>
+  <string name="pref_sirf_gps_summary_on">"Использовать опции SiRF"</string>
   <string name="pref_sirf_nmea_category_title">Выбор строк NMEA</string>
   <string name="pref_sirf_gps_category_title">Работа GPS</string>
   <string name="pref_enable_gga_title">Включение NMEA GGA</string>
