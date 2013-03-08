@@ -115,8 +115,8 @@
     
     <string name="about_title">Sobre</string>
     <string name="about_version">BluetoothGPS4Droid version</string>
-    <string name="about_copyright_1">Copyright (C) 2010, 2011, 2012 Herbert von Broeuschmeul</string>
-    <string name="about_copyright_2">Copyright (C) 2010, 2011, 2012 BluetoothGPS4Droid Project</string>
+    <string name="about_copyright_1">Copyright (C) 2010-2013 Herbert von Broeuschmeul</string>
+    <string name="about_copyright_2">Copyright (C) 2010-2013 BluetoothGPS4Droid Project</string>
     <string name="about_app_desc">Bluetooth GPS para Android é uma aplicação 
     	para usar um bluetooth GPS em dispositivos Android.
     </string>
